@@ -140,14 +140,13 @@
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
   <!-- End Hotjar -->
-
 </head>
 
 <body>
 
   <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGK9D6H"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGK9D6H"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
   <!-- ======= Top Bar ======= -->
@@ -330,6 +329,11 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
       <a href="#contact" class="blue-btn position-relative"> Daftar <span class="d-none d-md-inline">Sekarang</span>
+        <span class="position-absolute top-0 start-70 translate-middle badge rounded-pill bg-danger">
+          <i class='bx bxs-alarm-exclamation bx-tada'></i>
+          <em class="countdown" data-count="2025/12/2" data-template="&nbsp;%m:%s" style="font-family: 'Nunito',sans-serif;font-style: normal;"></em>
+          <span class="visually-hidden">unread messages</span>
+        </span>
       </a>
 
     </div>
@@ -396,10 +400,19 @@
               <div class="form-group">
                 <select name="Program" id="programs" class="form-select" required>
                   <option value="" selected disabled value="">Program Yang Akan Diambil</option>
-                  <optgroup label="------------">
-                    <option>Basic Plus: 499K</option>
+                  <optgroup label="NO GARANSI ---">
+                    <option>Action Class: 257K </option>
+                  </optgroup>
+                  <optgroup label="GARANSI ---">
+                    <option>Action Plus: 579K </option>
+                  </optgroup>
+                  <optgroup label="GARANSI + MATERI ---">
+                    <option>Basic Plus: 499K </option>
                     <option>Paket Hemat: 975K</option>
                     <option>Basic Private: 987K</option>
+                  </optgroup>
+                  <optgroup label="GARANSI + HEMAT ---">
+                    <option>Paket Hemat: 975K (2 Program)</option>
                   </optgroup>
                 </select>
                 <div class="validate"></div>
@@ -411,7 +424,7 @@
                 <input type="hidden" name="UTM_Medium" value="">
                 <input type="hidden" name="UTM_Campaign" value="">
               <div class="form-group">
-                <textarea class="form-control" name="Ket" id="messages" rows="4" placeholder="Masalah didalam public speaking?"></textarea>
+                <textarea class="form-control" name="Ket" id="messages" rows="6" placeholder="Masalah didalam public speaking, pertanyaan atau kebutuhan bisa diceritakan ke Advisor Dialogika. Silahkan langsung klik Send Whatsapp 👇🏻" disabled></textarea>
                 <div class="validate"></div>
               </div>
               <div class="form-text">
@@ -428,21 +441,21 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="section-title d-none d-md-block" style="color:#fff;">
-                  <h2 class="kiri text-start text-light">Registration</h2>
+                  <h2 class="kiri text-start text-light">Open Registration</h2>
                   <p class="kiri text-start text-light">Public Speaking Class</p>
                   <p class="text-start">Unleash Your Full Potential by Mastering Art of Public Speaking</p>
                 </div>
               </div>
               <div class="col-md-6" >
                 <div class="info-box mt-4">
-                  <a href="#faqs"><h3>Syllabus Kami</h3></a>
+                  <a href="#faqs"><h3 style="color: #0B2B6A;">Syllabus Kami</h3></a>
                   <p>Bentuk materi disetiap pertemuannya<br><br></p>
                   <a href="#faqs"><i class='bx bx-down-arrow-circle bx-tada'></i></a>
                 </div>
               </div>
               <div class="col-md-6" >
                 <div class="info-box mt-4">
-                  <a href="#testimonials"><h3>Testimoni Mereka</h3></a>
+                  <a href="#testimonials"><h3 style="color: #0B2B6A;">Testimoni Mereka</h3></a>
                   <p>Pendapat para peserta layanan kami<br><br></p>
                   <a href="#testimonials"><i class='bx bx-down-arrow-circle bx-tada'></i></a>
                 </div>
@@ -504,7 +517,7 @@
                     <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img flex-shrink-0" alt="">
                     <div>
                       <h3>Mufhid Ibrahim</h3>
-                      <h4>Designer</h4>
+                      <h4>HRD SMK Dr Sutomo</h4>
                       <div class="stars">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                       </div>
@@ -536,7 +549,7 @@
                     <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img flex-shrink-0" alt="">
                     <div>
                       <h3>Nizwar Mirza</h3>
-                      <h4>Store Owner</h4>
+                      <!-- <h4>Pengacara</h4> -->
                       <div class="stars">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                       </div>
@@ -603,7 +616,7 @@
 
         <div class="section-title">
           <h2 class="dumpil">Syllabus</h2>
-          <h2 class="tengah">Selama Satu Bulan</h2>
+          <h2 class="tengah">Program Basic</h2>
           <p></p>
         </div>
 
@@ -1091,19 +1104,25 @@
                 <h3 class="title-heading mt-3 ms-0">Harga Kelas & Perbandingan Paket</h3>
               </div>
 
-              <p class="title-desc text-muted mt-3">Ambil dua paket basic plus dan kelas presentasi jauh lebih hemat!</p>
+              <p class="title-desc text-muted mt-3">Program dan harga kelas di Dialogika</p>
 
               <div class="pricing-tabs mt-4">
                 <ul class="nav nav-pills rounded justify-content-center d-inline-block pricing-tab-border py-1 px-2"
                     id="pills-tab" role="tablist">
                   <li class="nav-item d-inline-block">
+                    <a class="nav-link px-3 rounded lunarly" id="Lunarly" data-bs-toggle="pill"
+                      href="#Lunar" role="tab" aria-controls="Year" aria-selected="false">
+                        Subscribe
+                    </a>
+                  </li>
+                  <li class="nav-item d-inline-block">
                     <a class="nav-link px-3 rounded active monthly" id="Monthly" data-bs-toggle="pill"
-                       href="#Month" role="tab" aria-controls="Month" aria-selected="true">Basic Plus</a>
+                       href="#Month" role="tab" aria-controls="Month" aria-selected="true">Package</a>
                   </li>
                   <li class="nav-item d-inline-block">
                     <a class="nav-link px-3 rounded yearly" id="Yearly" data-bs-toggle="pill"
                       href="#Year" role="tab" aria-controls="Year" aria-selected="false">
-                        Hemat <span class="badge bg-success rounded text-white">61% Off </span>
+                        Hemat <span class="badge bg-success rounded text-white">61%</span>
                     </a>
                   </li>
                 </ul>
@@ -1114,6 +1133,90 @@
 
           <div class="col-lg-7 g-0 offset-lg-1">
             <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade" id="Lunar" role="tabpanel" aria-labelledby="Lunarly">
+                <div class="row g-0 align-items-center">
+                  <div class="col-lg-6">
+                    <div class="pricing-box active bg-white rounded mt-4">
+                      <div class="pricing-badge">
+                        <span class="badge">Langganan</span>
+                      </div>
+
+                      <h5 class="fw-normal">Action Class</h5>
+                      <h1 class="pricing-title mt-3 mb-0">IDR 257.000 
+                        <span class="f-13"> Per Bulan</span>
+                      </h1>
+                      <p class="text-muted f-15 mt-3"><i>Focus Point:</i> Kelas ini <b>Praktek Only tidak ada materi dan bimbingan</b>, kelas ini lebih disarankan kepada Anda yang sudah bagus public speakingnya dan butuh wadah berlatih</p>
+
+                      <hr class="mt-4">
+
+                      <div class="mt-4 pt-1">
+                        <p class="mb-3 f-16">
+                          <i class='bx bxs-x-circle' style="color:#aaaaaa;"></i>
+                          <strike style="color:#aaaaaa;">
+                            Garansi mengulang kelas</strike>
+                        </p>
+                        <p class="mb-3 f-16">
+                          <i class='bx bxs-check-circle'></i>
+                          <b>4x pertemuan</b> dalam sebulan
+                        </p>
+                        <p class="mb-3 f-16">
+                          <i class='bx bxs-check-circle'></i>
+                          Maksimal peserta <b>25 orang</b>
+                        </p>
+                        <p class="mb-3 f-16">
+                          <i class='bx bxs-check-circle'></i>
+                          Durasi kelas <b>90 menit</b>
+                        </p>
+                        <p class="mb-3 f-16">
+                          <i class='bx bxs-x-circle' style="color:#aaaaaa;"></i>
+                          <strike style="color:#aaaaaa;">
+                            Dapat eCertificate</strike>
+                        </p>
+                      </div>
+                      <div class="mt-4 pt-2 text-center">
+                        <a href="#contact" data-bs-scroll="#contact" class="btn btn-primary w-100">Daftar Sekarang</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="pricing-box bg-white rounded mt-4">
+                        <h5 class="fw-normal" style="font-family: verdana;">Action Plus</h5>
+                        <span class="badge badge-pill rounded-green">3 bulan Action Class</span>
+                        <h1 class="pricing-title mt-3 mb-0">IDR 579.000
+                          <span class="f-13"> <strike>IDR 771.000</strike></span>
+                        </h1>
+                        <p class="text-muted f-15 mt-3"><i>Focus Point:</i> Kelas ini <b>lebih hemat dari Action Class Per Bulan</b> plus mendapatkan garansi mengulang dan eCertificate.</p>
+                        <div class="mt-4 pt-1">
+                          <p class="mb-3 f-16">
+                            <i class='bx bxs-check-circle'></i>
+                              Garansi mengulang kelas
+                          </p>
+                          <p class="mb-3 f-16">
+                            <i class='bx bxs-check-circle'></i>
+                            <b>12x pertemuan</b> 3 bulan
+                          </p>
+                          <p class="mb-3 f-16">
+                            <i class='bx bxs-check-circle'></i>
+                            Maksimal peserta <b>25 orang</b>
+                          </p>
+                          <p class="mb-3 f-16">
+                            <i class='bx bxs-check-circle'></i>
+                            Durasi kelas <b>90 menit</b>
+                          </p>
+                          <p class="mb-3 f-16">
+                            <i class='bx bxs-check-circle'></i>
+                              Dapat eCertificate
+                          </p>
+                        </div>
+                      <div class="mt-4 pt-2 text-center">
+                        <a href="#contact" data-bs-scroll="#contact" class="btn btn-primary w-100">Daftar Sekarang</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div class="tab-pane fade active show" id="Month" role="tabpanel" aria-labelledby="Monthly">
                 <div class="row g-0 align-items-center">
                   <div class="col-lg-6">
@@ -1203,11 +1306,11 @@
                         <span class="badge">Best Choice</span>
                       </div>
 
-                      <h5 class="fw-normal">Presentation Plus</h5>
+                      <h5 class="fw-normal">Paket Hemat</h5>
                       <h1 class="pricing-title mt-3 mb-0">IDR 975.000 
                         <span class="f-13"> <strike>IDR 2.500.000</strike></span>
                       </h1>
-                      <p class="text-muted f-15 mt-3">Start dari awal hingga mampu mengelaborasi fakta dan data, serta storytelling dengan baik sekalipun tanpa powerpoint</p>
+                      <p class="text-muted f-15 mt-3">Gabungan harga kelas dari kelas <b>basic plus</b> dan <b>presentasi</b></p>
                       <hr class="mt-4">
                         <div class="mt-4 pt-1">
                           <p class="mb-3 f-16">
@@ -1216,7 +1319,11 @@
                           </p>
                           <p class="mb-3 f-16">
                             <i class='bx bxs-check-circle'></i>
-                            <b>14x pertemuan:</b> 2 Bulan
+                            <b>7x pertemuan:</b> Basic Plus
+                          </p>
+                          <p class="mb-3 f-16">
+                            <i class='bx bxs-check-circle'></i>
+                            <b>7x pertemuan:</b> Presentation
                           </p>
                           <p class="mb-3 f-16">
                             <i class='bx bxs-check-circle'></i>
@@ -1271,7 +1378,6 @@
                   </div>
                 </div>
               </div>
-
               
             </div>
           </div>
