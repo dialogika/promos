@@ -92,6 +92,21 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 996;
 }
 
+.toast-atas {
+  position: fixed;
+  right: 15px;
+  top: 125px;
+  z-index: 996;
+}
+
+.toast-paling-atas {
+  background-color: #009961;
+  position: fixed;
+  right: 15px;
+  top: 75px;
+  z-index: 996;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
