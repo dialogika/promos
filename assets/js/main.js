@@ -114,6 +114,8 @@
     }
   });
 
+
+
   /**
    * Easy on scroll event listener 
    */
@@ -192,6 +194,22 @@
     }
     window.addEventListener('load', toggleBacktotop)
     onscroll(document, toggleBacktotop)
+  }
+
+  /**
+   * Swipe to appear
+   */
+  let swipetoappear = select('.swipe-to-appear')
+  if (swipetoappear) {
+    const toggleSwipetoappear = () => {
+      if (window.scrollY > 4500) {
+        swipetoappear.classList.add('active')
+      } else {
+        swipetoappear.classList.remove('active')
+      }
+    }
+    window.addEventListener('load', toggleSwipetoappear)
+    onscroll(document, toggleSwipetoappear)
   }
 
   /**
